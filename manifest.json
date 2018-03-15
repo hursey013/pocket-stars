@@ -1,9 +1,23 @@
 {
-  "name": "PocketStars",
-  "version": "0.1",
   "manifest_version": 2,
+  "name": "PocketStars",
+  "description": "Send starred Inoreader articles to Pocket",
+  "version": "0.1",
+  "author": "Brian Hurst",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "browser_action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
   "content_scripts": [{
-    "js": ["contentscript.js"],
+    "js": ["content.js"],
     "matches": ["https://www.inoreader.com/*"]
   }],
   "web_accessible_resources": ["script.js"]
