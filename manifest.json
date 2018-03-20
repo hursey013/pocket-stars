@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "PocketStars for Inoreader",
   "description": "Send starred Inoreader articles to Pocket",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Brian Hurst",
   "icons": {
     "16": "icon16.png",

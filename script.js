@@ -1,7 +1,7 @@
 waitForElement('reader_pane',function() {
-  var pocket = document.querySelector('.article').getAttribute('data-pocket');
+  var pocket = document.querySelector('[data-pocket="0"]');
 
-  if (pocket !== '-1') {
+  if (pocket) {
     document.body.addEventListener('click',function(e) {
       if (e.target && e.target.classList.contains('star_img')) {
         var string = e.target.parentNode.getAttribute('onclick');
